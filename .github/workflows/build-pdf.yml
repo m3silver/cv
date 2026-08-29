@@ -12,10 +12,17 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Generate PDF from Markdown
-        uses: docker://pandoc/latex:latest
-        with:
-          args: cv.md -o cv.pdf --variable margin=0.75in
+      - name: Install Pandoc and WeasyPrint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc weasyprint
+
+      - name: Build Styled PDF
+        run: |
+          pandoc cv.md -o cv.pdf \
+            --pdf-engine=weasyprint \
+            --css=style.css \
+            --standalone
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
