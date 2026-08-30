@@ -15,7 +15,7 @@
 
 # CAREER OBJECTIVE
   
-I am a medical officer with a keen interest in health systems leadership and strengthening for the advancement of accessible quality care.
+I am a medical officer with a keen interest in health systems leadership and strengthening for the advancement of accessible quality care. I have a track record of successfully translating population health priorities into operational excellence, leading multidisciplinary teams, optimizing clinical services, and advancing institutional goals in both public and private sectors
 
 # EDUCATION
 
